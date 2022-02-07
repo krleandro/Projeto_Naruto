@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Naruto 3D&T</title>
+    <link rel="stylesheet" type="text/css" href="estilo/style.css" />
+    <style>
+        section{
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+        section ul{
+            padding-left: 30px;
+            list-style-type: '🔥';
+        }
+        table{
+            
+            width: 300px;
+            table-layout: fixed;            
+            border-collapse: collapse;
+            margin: auto;            
+            margin-bottom: 15px;
+            text-align: center;
+                         
+        }
+        th{
+            background-color: var(--cor4);
+            color: white;
+        }
+                
+        tr:nth-child(even){ /*formatação zebra*/
+            background: rgb(243, 226, 190);
+        }
+        
+        footer{
+            position: relative;
+        }
+
+        #legenda_atributos{
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            font-weight: bolder;
+        }
+    </style>
+    
+    
+</head>
+
+<body>
+    <header>
+        <h1 id="tituloprincipal">Naruto RPG - 3D&T</h1>
+        <nav>
+            <ul>
+                <li><a href="sobre.html">Sobre o jogo</a></li>
+                <li><a href="#">Sistema e Regras</a></li>
+                <li><a href="#">Jutsus</a></li>
+                <li><a href="#">Equipamentos</a></li>
+                <li><a href="#">Ficha de personagem</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="subtitulo" id="adaptacoes">O sistema e as adaptações</h2>
+            <p>Este jogo é realizado com uma adaptação do sistema 3D&T, realizada por nós para jogos como este. Nesta adaptação, encontramos as seguintes modificações:</p>
+            <ul>
+                <li>Os atributos podem chegar a 20 pontos;</li>
+                <li>Os testes de perícias são realizados de forma crescente, com uma dificuldade pré-determinada pelo mestre;</li>
+                <li>Foi adicionado o sistema de JOB, que são pontos adquiridos por combate que servem para comprar e aprimorar os jutsus;</li>
+                <li>O atributo Controle de chakra foi adicionado como limitar para a capacidade do ninja de lançar certos jutsus, ainda que detenha o conhecimento para tal.</li>
+            </ul>
+
+            <h2 class="subtitulo" id="atributos">Os atributos</h2>
+            <p>Os atributos definem o quão forte, rápido, habilidoso e resistente seu personagem é. Eles definem ainda o quão bem seu ninja controla o chakra, assim como sua capacidade de acertar ataques a distância. Normalmente, uma campanha que comece com ninjas de nível Genin tem 12 pontos iniciais para os atributos. Campanhas com personagens mais experientes podem ter mais de 20 pontos iniciais e com alunos da academia entre 5 e 8 pontos. Os atributos são:</p>
+            <ul id="lista_atributos">
+                <li>Força: determina a força física do personagem, o dano causado por seus ataques físicos e outros feitos como levantar, carregar, arremessar, etc.;</li>
+                <li>Habilidade: define o quão rápido o personagem é, assim como suas capacidades motoras.</li>
+                <li>Resistência: mede quanto dano o personagem é capaz de suportar, além de ser usada para feitos de resistência como nadar, suportar ferimentos, venenos, entre outros.</li>
+                <li>Controle de chakra: um ninja que não controla bem seu chakra usa suas reservas com mais velocidade, além de não conseguir realizar determinados jutsus. O controle de chakra determina o quão bem o personagem usa sua energia para usar e manter jutsus ativos.</li>
+                <li>Poder de fogo: serve para o uso de ataques a distância, como kunais, shurikens, entre outros. Também é usado para definir a força de ataque (FA) de alguns jutsus.</li>
+            </ul>
+            <p>O custo dos atributos varia de acordo com seu nível neles, de acordo com a tabela abaixo:</p>
+            <br>
+
+            <p id="legenda_atributos">Tabela 1 - Custo dos atributos</p>
+
+            <div style="overflow-x: auto;">
+                <table border="2">
+                    <tr>
+                        <th>Nível de atributo</th>
+                        <th>Custo (por ponto)</th>
+                    </tr>
+                    <tr>
+                        <td>1 - 5</td>
+                        <td>1 ponto</td>
+                    </tr>
+                    <tr>
+                        <td>6 - 10</td>
+                        <td>2 pontos</td>
+                    </tr>
+                    <tr>
+                        <td>11 - 15</td>
+                        <td>3 pontos</td>
+                    </tr>
+                    <tr>
+                        <td>16-20</td>
+                        <td>5 pontos</td>
+                    </tr>
+                
+                </table>
+                <p>Por exemplo, para comprar o sexto ponto em Força, o personagem usará 2 pontos de personagem, e assim sucessivamente de acordo com a tabela.</p>
+            </div>
+        <h2 class="subtitulo" id="pericias">As perícias</h2>
+        <p>As perícias são habilidades que os ninjas possuem para auxiliar em suas missões e batalhas. Em termos mecânicos, cada ponto de personagem usado em perícias vale 5 pontos para distribuir entre elas. Para aumentar as perícias do personagem, ele deve ter ao menos algum tipo de treinamento ou contato com a perícia que quer desenvolver. Não faz sentido um ninja usar pontos de perícias para aumentar seu nível em Sobrevivência se não saiu da vila nos últimos 3 meses, por exemplo.</p> 
+        <p>Obs: Assim como no caso dos atributos, as perícias possuem custo mais elevado quando passam de 5 pontos, respeitando a tabela 1. </p>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido por Mirim.</p>
+        <p>Adaptações por PVMadeira.</p>
+    </footer>
+</body>
+
+</html>
